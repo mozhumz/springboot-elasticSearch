@@ -1,0 +1,21 @@
+# spring
+spring:
+  data:
+    elasticsearch:
+      #默认为elasticsearch
+      cluster-name: es6.7
+      cluster-nodes: 192.168.126.10:9300,192.168.126.11:9300,192.168.126.12:9300 #配置es节点信息，逗号分隔，如果没有指定，则启动ClientNode
+      properties:
+        path:
+          logs: ./elasticsearch/log #elasticsearch日志存储目录
+          data: ./elasticsearch/data #elasticsearch数据存储目录
+server:
+  port: 8080
+
+  # datasource
+#  datasource:
+#    # druid
+#    druid:
+#      url: jdbc:mysql://host:port/database?useUnicode=true&useSSL=false&characterEncoding=utf8&serverTimezone=GMT%2B8
+#      username:
+#      password:

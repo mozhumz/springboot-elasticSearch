@@ -1,0 +1,15 @@
+# spring
+spring:
+  # profiles
+  profiles:
+    active: local
+# log
+logging:
+  config: classpath:config/logback-spring.xml
+  level:
+    root: warn
+    com.mozhumz.es: info
+# mybatis plus
+#mybatis-plus:
+#  type-aliases-package: com.mozhumz.es.springboot-elasticSearch.entity,com.mozhumz.es.springboot-elasticSearch.model.*
+#  mapper-locations: classpath:mappers/*Mapper.xml
